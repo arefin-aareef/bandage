@@ -1,4 +1,7 @@
 import { Flex, Heading, Text, Button } from "@chakra-ui/react";
+import Link from "next/link";
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 
 const Action = () => {
   return (
@@ -11,6 +14,12 @@ const Action = () => {
         RELIT official consequent.
       </Text>
       <Button color='#ffffff' backgroundColor='#23A6F0' size='lg' mx={'auto'}>Try it for free</Button>
+      <Flex mx='auto' mt='30' gap={6} mb={30}>
+        <Link href=''><FaTwitter size={24} /></Link>
+        <Link href=''><FaFacebook size={24} /></Link>
+        <Link href=''><FaInstagram size={24} /></Link>
+        <Link href=''><FaLinkedinIn size={24} /></Link>
+      </Flex>
     </Flex>
   );
 };

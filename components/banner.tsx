@@ -18,11 +18,11 @@ export default function Banner() {
                 </Flex>
             </Flex>
 
-            <Grid templateColumns='repeat(2, 1fr)'>
-                <GridItem mx={"auto"}>
+            <Grid templateColumns='repeat(2, 1fr)' gap={2}>
+                <GridItem>
                     <Image src='/assets/img1.png' alt='img' />
                 </GridItem>
-                <GridItem>
+                <GridItem my='auto'>
                     <Grid  templateColumns='repeat(2, 1fr)' gap={2}>
                         <GridItem><Image src="/assets/img2.png" alt="img" /></GridItem>
                         <GridItem><Image src="/assets/img3.png" alt="img" /></GridItem>

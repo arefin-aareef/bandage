@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Stack } from "@chakra-ui/react";
 import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,10 +19,12 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <ChakraProvider>
-          <Navbar />
-          {children}
-        </ChakraProvider>
+        <Stack maxW={"1340px"} mx="auto">
+          <ChakraProvider>
+            <Navbar />
+            {children}
+          </ChakraProvider>
+        </Stack>
       </body>
     </html>
   );
