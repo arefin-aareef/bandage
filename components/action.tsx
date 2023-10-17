@@ -5,8 +5,8 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa
 
 const Action = () => {
   return (
-    <Flex direction="column" my={10}>
-      <Heading fontSize={40} fontWeight="bold" mx="auto">
+    <Flex direction="column" px='16px' my={10}>
+      <Heading textAlign='center' fontSize={40} fontWeight="bold" mx="auto">
         Start your 14 days free trial
       </Heading>
       <Text textAlign='center' fontSize={14} my={30} color="#737373" fontWeight="bold" mx="auto">

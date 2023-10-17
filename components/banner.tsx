@@ -10,7 +10,7 @@ export default function Banner() {
 
             <Flex  direction={"column"} textAlign={"center"} py={50}>
                 <Text color="#737373" fontWeight={"bold"} fontSize={16}>WHAT WE DO</Text>
-                <Text fontWeight={"bold"} fontSize={58} py={2}>Innovation tailored for you</Text>
+                <Text fontWeight={"bold"} fontSize={{base: '40px', md: '58px'}} px='45px' py={2}>Innovation tailored for you</Text>
                 <Flex display={"flex"} alignItems={"center"} justifyContent={"center"}>
                     <Text color={"#252B42"} fontWeight={"bold"} fontSize={14}>Home</Text>
                     <Text mx={2}><LiaAngleRightSolid /></Text>
@@ -18,11 +18,11 @@ export default function Banner() {
                 </Flex>
             </Flex>
 
-            <Grid templateColumns='repeat(2, 1fr)' gap={2}>
-                <GridItem>
+            <Grid templateColumns={{base:'repeat(1, 1fr)', md:'repeat(2, 1fr)'}} gap={2}>
+                <GridItem mx='auto'>
                     <Image src='/assets/img1.png' alt='img' />
                 </GridItem>
-                <GridItem my='auto'>
+                <GridItem my='auto' >
                     <Grid  templateColumns='repeat(2, 1fr)' gap={2}>
                         <GridItem><Image src="/assets/img2.png" alt="img" /></GridItem>
                         <GridItem><Image src="/assets/img3.png" alt="img" /></GridItem>

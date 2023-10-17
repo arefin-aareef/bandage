@@ -51,11 +51,11 @@ export default function Team() {
   ];
   return (
     <Flex direction='column'>
-      <Heading textAlign={"center"} py={112}>
+      <Heading textAlign={"center"} fontSize='40px' py={{base:45, md:112}}>
         Meet Our Team
       </Heading>
 
-      <Grid templateColumns="repeat(3, 1fr)" gap={10} justifyItems='center' mx={203}>
+      <Grid templateColumns={{base:"repeat(1, 1fr)", md:"repeat(3, 1fr)"}} gap={2} justifyItems='center' mx={{base:26, md:100, lg:190}}>
         {teamMembers.map((member, index) => (
             <MemberCard key={index} member={member}></MemberCard>
         ))}
